@@ -1,0 +1,92 @@
+/* signup.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('/static/users/images/res.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-container {
+    padding: 30px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #666;
+}
+
+button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: #ff7e5f;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #feb47b;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+span.switch {
+    display: block;
+    margin-top: 15px;
+}
+
+span.switch a {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+span.switch a:hover {
+    text-decoration: underline;
+}
+
+/* Form Validation */
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid green;
+}

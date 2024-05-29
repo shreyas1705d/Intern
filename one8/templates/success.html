@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Successful</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'users/success.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="success-container">
+            <h1>{{ user.username }}, you have been successfully logged in</h1>
+            <a href="{% url 'logout' %}"><button style="background-color: #ff7e5f; color: white; padding: 15px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background 0.3s ease;">Logout</button></a>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,103 @@
+/* Basic reset to remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('/static/images/jack-sparrow-in-pirates-of-the-caribbean-dead-men-tell-no-tales-movie-sd.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333; /* Ensuring text color is readable */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9); /* More opaque background for better readability */
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    max-width: 100%;
+}
+
+.form-container {
+    padding: 30px;
+}
+
+input {
+    background: rgba(255, 255, 255, 1); /* Fully opaque input background for better readability */
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+    color: #333; /* Darker text color for inputs */
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #666; /* Darker placeholder text */
+}
+
+button {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    background: #ff7e5f;
+    color: white; /* White text for contrast */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 20%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #feb47b;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Darker heading color */
+}
+
+span.switch {
+    display: block;
+    margin-top: 15px;
+}
+
+span.switch a {
+    color: #ff7e5f; /* Matching link color with button */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+span.switch a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 300px;
+    }
+}
+
+/* Form Validation */
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+h1 {
+    color: #333;
+}
+
